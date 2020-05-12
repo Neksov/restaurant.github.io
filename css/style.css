@@ -1,4 +1,341 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/proxima-nova-thin.woff") format("woff"), url("../fonts/proxima-nova-thin.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
+@font-face {
+  font-family: 'Proxima Nova Alt';
+  src: url("../fonts/ProximaNovaA-Regular.woff") format("woff"), url("../fonts/ProximaNovaA-Regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
+@font-face {
+  font-family: 'Forever Brush Script';
+  src: url("../fonts/foreverbrushscript.woff") format("woff"), url("../fonts/foreverbrushscript.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
 body {
-  background-color: #000000;
-}
-/*# sourceMappingURL=style.css.map */
+  font-family: 'Proxima Nova Alt';
+  font-size: 16px; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+button:focus, input:focus, textarea:focus, a:focus {
+  outline: none !important; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+a:hover {
+  text-decoration: none; }
+
+a, button, :before, :after {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+
+.btn {
+  padding: 1rem 2.3rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 35px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  cursor: pointer; }
+  .btn--primary {
+    background-color: #ff5a3c;
+    color: #ffffff; }
+  .btn--light {
+    background: #FAF9F9;
+    border: 1px solid #E5E5E5; }
+  .btn:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .btn:active, .btn:focus {
+    outline: none; }
+
+label.invalid {
+  position: absolute;
+  margin-top: 53px;
+  color: #38393b; }
+
+input.invalid {
+  border-bottom: 1px solid #ff5a3c; }
+
+.header {
+  padding-top: 52px; }
+  .header__logo {
+    position: relative;
+    font-family: "Proxima Nova";
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #fff;
+    width: 160px;
+    height: 40px; }
+    .header__logo:hover {
+      color: #fff; }
+    .header__logo::before, .header__logo::after {
+      position: absolute;
+      content: '';
+      width: 30%;
+      height: 70%;
+      margin-left: -20px;
+      margin-top: -5px; }
+    .header__logo::before {
+      left: 0;
+      top: 0;
+      border-top: 3px solid #f3e352ee;
+      border-left: 3px solid #f3e352ee; }
+    .header__logo::after {
+      right: 0;
+      bottom: 0;
+      border-bottom: 3px solid #f3e352ee;
+      border-right: 3px solid #f3e352ee; }
+    .header__logo:hover::before {
+      left: -20px;
+      top: -20px;
+      border-top: 3px solid #f3e352ee;
+      border-left: 3px solid #f3e352ee; }
+    .header__logo:hover::after {
+      right: -20px;
+      bottom: -20px;
+      border-bottom: 3px solid #f3e352ee;
+      border-right: 3px solid #f3e352ee; }
+  .header__navbar-nav {
+    margin-left: auto; }
+
+.nav-item {
+  position: relative; }
+  .nav-item a {
+    padding: 0 25px;
+    color: #fff; }
+    .nav-item a:hover {
+      color: #f3e352ee;
+      opacity: 0.6;
+      text-decoration: none; }
+  .nav-item::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    border-radius: 2px;
+    background-color: #f3e352ee;
+    width: 0%;
+    left: 50%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .nav-item:hover:after {
+    width: 70%; }
+
+.navbar-collapse {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out; }
+
+.show {
+  background-color: #f3e352ee;
+  opacity: 0.5;
+  margin-top: 30px; }
+  .show .nav-item {
+    font-size: 20px;
+    margin: auto; }
+    .show .nav-item a {
+      color: #c8235d; }
+
+.banner {
+  background: url(../img/bg_banner.jpg) no-repeat center;
+  background-size: cover; }
+  .banner__fone {
+    color: #ffffff;
+    padding-top: 321px;
+    padding-bottom: 442px; }
+    .banner__fone-title {
+      position: relative;
+      font-family: "Proxima Nova";
+      font-size: 72px;
+      line-height: 32px;
+      text-transform: uppercase;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      letter-spacing: 1px;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      cursor: pointer; }
+      .banner__fone-title:hover {
+        font-size: 100px; }
+        .banner__fone-title:hover::after {
+          position: absolute;
+          content: '';
+          width: 40%;
+          height: 150%;
+          bottom: -35px;
+          right: 300px;
+          border-bottom: 5px solid #f3e352ee;
+          border-right: 5px solid #f3e352ee; }
+    .banner__fone-text {
+      font-size: 18px;
+      line-height: 32px;
+      height: 48px;
+      max-width: 733px;
+      margin: auto;
+      text-align: center;
+      padding-top: 35px; }
+
+.about {
+  background-color: #962323;
+  padding-top: 121px;
+  padding-bottom: 114px; }
+  .about__images {
+    -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 27px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    cursor: pointer; }
+    .about__images:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); }
+
+.history {
+  text-align: center;
+  padding-top: 56px;
+  padding-left: 100px; }
+  .history__title {
+    position: relative;
+    font-family: "Forever Brush Script";
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 32px; }
+    .history__title::after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 108px;
+      height: 2px;
+      background-color: #ffffff;
+      margin-left: 217px;
+      margin-top: 32px; }
+  .history__info {
+    font-family: 'Proxima Nova Alt';
+    max-width: 535px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 80px; }
+
+.singatures {
+  background: url(../img/signatures.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 128px;
+  padding-bottom: 114px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 32px; }
+  .singatures__title {
+    font-family: "Forever Brush Script";
+    font-size: 56px;
+    position: relative; }
+    .singatures__title::after {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      content: '';
+      width: 108px;
+      height: 2px;
+      background-color: #c8235d;
+      margin-left: 505px;
+      margin-top: 32px; }
+  .singatures__info {
+    max-width: 512px;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 80px; }
+
+.menu {
+  padding-top: 127px;
+  padding-bottom: 121px;
+  background: #f3f4f7; }
+  .menu__title {
+    color: #0b0c0d;
+    font-family: "Forever Brush Script";
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center; }
+    .menu__title::after {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      content: '';
+      width: 108px;
+      height: 2px;
+      background-color: #c8235d;
+      margin-left: 505px;
+      margin-top: 32px; }
+  .menu__info {
+    margin-bottom: 47px; }
+    .menu__info-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .menu__name {
+    color: #0b0c0d;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px; }
+  .menu__desert {
+    max-width: 447px;
+    max-height: 43px;
+    opacity: 0.7;
+    color: #0b0c0d;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    margin-top: 12px;
+    line-height: 20px; }
+  .menu__price {
+    color: #c8235d;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-right: -20px; }
+
+.cards {
+  margin-top: 139px;
+  margin-left: 7px; }
+
+.cards2 {
+  margin-top: 139px;
+  margin-left: -13px; }

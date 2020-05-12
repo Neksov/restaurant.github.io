@@ -1,1 +1,86 @@
+.header
+  padding-top: 52px
+
+  &__logo
+    position: relative
+    font-family: "Proxima Nova"
+    font-size: 31px
+    font-weight: 400
+    line-height: 32px
+    color: #fff
+    width: 160px
+    height: 40px
+    &:hover
+      color: #fff
+    &::before, &::after
+      position: absolute
+      content: ''
+      width: 30%
+      height: 70%
+      margin-left: -20px
+      margin-top: -5px
+    &::before
+      left: 0
+      top: 0
+      border-top: 3px solid #f3e352ee
+      border-left: 3px solid #f3e352ee
+    &::after
+      right: 0
+      bottom: 0
+      border-bottom: 3px solid #f3e352ee
+      border-right: 3px solid #f3e352ee
+    &:hover
+      &::before
+        left: -20px
+        top: -20px
+        border-top: 3px solid #f3e352ee
+        border-left: 3px solid #f3e352ee
+      &::after
+        right: -20px
+        bottom: -20px
+        border-bottom: 3px solid #f3e352ee
+        border-right: 3px solid #f3e352ee
+    
+
+  &__navbar
+    &-nav
+      margin-left: auto
+.nav
+  &-item
+    position: relative
+    a
+      padding: 0 25px
+      color: #fff
+      &:hover
+        color: #f3e352ee
+        opacity: 0.6
+        text-decoration: none
+    &::after //нижнее подчеркивание
+      position: absolute
+      content: ""
+      display: block
+      height: 1px
+      border-radius: 2px
+      background-color: #f3e352ee
+      width: 0%
+      left: 50%
+      transition: .3s ease-in-out
+      transform: translateX(-50%)
+    &:hover
+      &:after
+        width: 70%
+.navbar-collapse
+  //margin-top: -400px
+  transition: .5s ease-in-out
+.show
+  background-color: #f3e352ee
+  opacity: 0.5
+  margin-top: 30px
+
+  .nav-item
+    font-size: 20px
+    margin: auto
+    a
+      color: #c8235d
+
 

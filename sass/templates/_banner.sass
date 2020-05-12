@@ -1,0 +1,41 @@
+.banner
+  background: url(../img/bg_banner.jpg) no-repeat center
+  background-size: cover
+  &__fone
+    color: #ffffff
+    padding-top: 321px
+    padding-bottom: 442px
+    &-title
+      position: relative
+      font-family: "Proxima Nova"
+      font-size: 72px
+      line-height: 32px
+      text-transform: uppercase
+      display: flex
+      justify-content: center
+      letter-spacing: 1px
+      transition: .3s ease-in-out
+      cursor: pointer
+      &:hover
+        font-size: 100px
+        &::after
+          position: absolute
+          content: ''
+          width: 40%
+          height: 150%
+          bottom: -35px
+          right: 300px
+          border-bottom: 5px solid #f3e352ee
+          border-right: 5px solid #f3e352ee
+
+    &-text
+      font-size: 18px
+      line-height: 32px
+      height: 48px
+      max-width: 733px
+      margin: auto
+      text-align: center
+      padding-top: 35px
+
+      
+

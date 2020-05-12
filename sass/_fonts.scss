@@ -1,8 +1,28 @@
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Proxima Nova';
   src:
-    url('../fonts/Lato-Regular.woff') format('woff'),
-    url('../fonts/Lato-Regular.woff2') format('woff');
+    url('../fonts/proxima-nova-thin.woff') format('woff'),
+    url('../fonts/proxima-nova-thin.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Alt';
+  src:
+    url('../fonts/ProximaNovaA-Regular.woff') format('woff'),
+    url('../fonts/ProximaNovaA-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: 'Forever Brush Script';
+  src:
+    url('../fonts/foreverbrushscript.woff') format('woff'),
+    url('../fonts/foreverbrushscript.woff2') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: wrap;
