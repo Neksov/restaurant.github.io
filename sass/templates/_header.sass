@@ -1,6 +1,6 @@
 .header
   padding-top: 52px
-
+  position: relative
   &__logo
     position: relative
     font-family: "Proxima Nova"
@@ -48,13 +48,12 @@
 .nav
   &-item
     position: relative
-    a
-      padding: 0 25px
-      color: #fff
-      &:hover
-        color: #f3e352ee
-        opacity: 0.6
-        text-decoration: none
+    padding: 0 25px
+    color: #fff
+    &:hover
+      color: #f3e352ee
+      opacity: 0.6
+      text-decoration: none
     &::after //нижнее подчеркивание
       position: absolute
       content: ""
@@ -69,18 +68,3 @@
     &:hover
       &:after
         width: 70%
-.navbar-collapse
-  //margin-top: -400px
-  transition: .5s ease-in-out
-.show
-  background-color: #f3e352ee
-  opacity: 0.5
-  margin-top: 30px
-
-  .nav-item
-    font-size: 20px
-    margin: auto
-    a
-      color: #c8235d
-
-
