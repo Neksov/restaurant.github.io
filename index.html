@@ -10,10 +10,12 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
   <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/animate.css" media="all" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animate.min.css" media="all" />
+
   <title>Restaurant</title>
 </head>
 
@@ -50,7 +52,7 @@
         <div class="banner__fone">
           <div class="row">
             <div class="col-xl-12 col-lg-12 col-sm-12 col-12">
-              <h1 class="banner__fone-title">Grandrestaurant</h1>
+              <h1 class="banner__fone-title wow fadeInLeft" data-wow-delay="0.4s">Grandrestaurant</h1>
               <p class="banner__fone-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -347,43 +349,163 @@
     <section class="portfolio">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xl-12 col-lg-6 col-md-12 col-sm-12">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 port">
             <div class="portfolio__foto">
-              <a href="img/image1.jpg" data-fancybox="images">
-                <img src="img/image1.jpg" alt="food">
-              </a>
-              <a href="img/image2.jpg" data-fancybox="images">
-                <img src="img/image2.jpg" alt="food">
-              </a>
-              <a href="img/image3.jpg" data-fancybox="images">
-                <img src="img/image3.jpg" alt="food">
-              </a>
-              <a href="img/image4.jpg" data-fancybox="images">
-                <img src="img/image4.jpg" alt="food">
-              </a>
-              <a href="img/image1.jpg" data-fancybox="images">
-                <img src="img/image1.jpg" alt="food">
-              </a>
-              <a href="img/image2.jpg" data-fancybox="images">
-                <img src="img/image2.jpg" alt="food">
-              </a>
-              <a href="img/image3.jpg" data-fancybox="images">
-                <img src="img/image3.jpg" alt="food">
-              </a>
-              <a href="img/image4.jpg" data-fancybox="images">
-                <img src="img/image4.jpg" alt="food">
-              </a>
+              <!-- Slider main container -->
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <a href="img/image1.jpg" data-fancybox="images">
+                      <img src="img/image1.jpg" alt="food">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/image2.jpg" data-fancybox="images">
+                      <img src="img/image2.jpg" alt="food">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/image3.jpg" data-fancybox="images">
+                      <img src="img/image3.jpg" alt="food">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/image4.jpg" data-fancybox="images">
+                      <img src="img/image4.jpg" alt="food">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/image1.jpg" data-fancybox="images">
+                      <img src="img/image1.jpg" alt="food">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/image2.jpg" data-fancybox="images">
+                      <img src="img/image2.jpg" alt="food">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/image3.jpg" data-fancybox="images">
+                      <img src="img/image3.jpg" alt="food">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="img/image4.jpg" data-fancybox="images">
+                      <img src="img/image4.jpg" alt="food">
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="footer">
-      <div class="container">
+  </main>
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+          <div class="name footer__name">
+            <h3 class="name__title">Restaurant</h3>
+            <p class="name__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa
+              qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+              voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+              veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+              voluptas
+              sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+              nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="category footer__category">
+            <span class="category__name">Sitemap</span>
+            <ul class="category__info">
+              <li>What we do</li>
+              <li>Who we are</li>
+              <li>Projects</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+          <div class="category footer__category">
+            <span class="category__name">Category</span>
+            <ul class="category__info">
+              <li>Concreting</li>
+              <li>Decoration</li>
+              <li>Building</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
+          <div class="category footer__category">
+            <span class="category__name">Menu</span>
+            <ul class="category__info">
+              <li>About us</li>
+              <li>Services</li>
+              <li>Projects</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-8">
+          <div class="category footer__category contacts">
+            <span class="category__name">Contact Us</span>
+            <ul class="category__info">
+              <li><a href="tel:+855-5564-65651"><img src="img/phone.png" alt="phone">855-5564-65651</a></li>
+              <li><a href="https://www.google.com/maps/@58,56.25,12z?hl=ru"><img src="img/map.png" alt="map">Adress
+                  streets City</a></li>
+              <li><a href="mailto:your.mail@domains.com"><img src="img/message.png" alt="message">
+                  your.mail@domains.com</a></li>
+            </ul>
+          </div>
+        </div>
 
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+  <section class="footerbottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-12 col-12">
+          <h3 class="footerbottom__name"><a href="free-psd-templates.com" target="_blank">Copyrights
+              free-psd-templates.com</a></h3>
+        </div>
+        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12 col-12">
+          <ul class="footerbottom__menu">
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Add More</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div class="footerbottom__social">
+            <ul>
+              <li>
+                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="img/be.png" alt="Be"></a>
+                <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="img/inst.png" alt="instagramm"></a>
+                <a href="#"><img src="img/pint.png" alt="pinteres"></a>
+                <a href="#"><img src="img/google.png" alt="google"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/swiper.min.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -396,10 +518,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.validate.min.js"></script>
   <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.mask.min.js"></script>
-  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/wow.min.js"></script>
+  <script src="js/wow.min.js"></script>
 </body>
 
 </html>

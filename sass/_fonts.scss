@@ -27,3 +27,23 @@
   font-style: normal;
   font-display: wrap;
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands Regular';
+  src:
+    url('../fonts/fa-brands-400.woff') format('woff'),
+    url('../fonts/fa-brands-400.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}

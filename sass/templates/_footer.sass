@@ -1,0 +1,74 @@
+.footer
+  background-color: #25262a
+  padding-top: 84px
+  padding-bottom: 60px
+  color: #ffffff
+  display: flex
+  flex-wrap: wrap
+.name
+  cursor: pointer
+  transition: .3s ease-in-out
+  &__info
+    margin-top: 47px
+    font-family: 'Roboto'
+    font-size: 14px
+    font-weight: 400
+    line-height: 24px
+    max-width: 244px
+    height: 65px
+    overflow: hidden
+    margin-left: 7px
+  &__title
+    position: relative
+    font-family: "Font Awesome 5 Brands Regular", sans-serif
+    font-size: 26px
+    font-weight: 400
+    line-height: 24px
+    letter-spacing: 0.9px
+  &::before, &::after
+    position: absolute
+    content: ''
+    width: 30%
+    height: 60%
+    margin-left: -20px
+    margin-top: -5px
+  &:hover
+    &::before
+      left: -10px
+      top: -10px
+      border-top: 3px solid #f3e352ee
+      border-left: 3px solid #f3e352ee
+    &::after
+      right: -10px
+      bottom: -10px
+      border-bottom: 3px solid #f3e352ee
+      border-right: 3px solid #f3e352ee
+
+.category
+  margin-left: 52px
+  cursor: pointer
+  &__name
+    font-family: Roboto
+    font-size: 18px
+    font-weight: 400
+    line-height: 32px
+    transition: .3s ease-in-out
+    &:hover
+      color: #f3e352ee
+      opacity: 0.6
+  &__info
+    font-size: 14px
+    list-style-type: none
+    margin-top: 31px
+    line-height: 33px
+    img
+      padding-right: 20px
+    li
+      transition: .3s ease-in-out
+      &:hover
+        color: #f3e352ee
+        opacity: 0.6
+.contacts
+  margin-left: 34px
+  a
+    color: #fff

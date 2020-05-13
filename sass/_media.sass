@@ -1,4 +1,4 @@
-@media  screen and (min-width : 992px) and (max-width : 1199px)
+@media screen and (min-width : 992px) and (max-width : 1199px)
   .banner
     &__fone
       &-title
@@ -11,7 +11,10 @@
     margin-left: 405px
   .cards2
     margin-right: 20px
-@media  screen and (min-width : 768px) and (max-width : 991px)
+  .category
+    img
+      padding-right: 5px
+@media screen and (min-width : 768px) and (max-width : 991px)
   .header
     &__logo
       &:hover
@@ -48,9 +51,6 @@
       &:hover
         &::after
           display: none
-  .portfolio img 
-    max-width: 280px
-    height: 165px
   .about
     padding-top: 60px
     padding-bottom: 60px
@@ -65,13 +65,37 @@
       margin: auto
     &__title::after
       margin-left: 285px
-@media  screen and (min-width : 576px) and (max-width : 767px)
+  .name
+    text-align: center
+    text-align: -webkit-center
+    &__info
+      margin-bottom: 30px
+    &:hover
+      &::before, &::after
+        display: none
+  .contacts 
+    margin-left: 50px
+  .category
+    &__name, li
+      &:hover
+        color: #fff
+  .footerbottom
+    padding-top: 20px
+    a
+      &:hover
+        color: #fff
+@media screen and (min-width : 576px) and (max-width : 767px)
   .banner
     &__fone
       padding-top: 100px
       padding-bottom: 160px
       &-title
-        font-size: 55px
+        font-size: 50px
+        &:hover
+          font-size: 50px
+          &::after
+            display: none
+        
   .about
     padding-top: 60px
     padding-bottom: 60px
@@ -94,9 +118,7 @@
     margin-left: 9px
   .cards 
     margin-top: 80px
-  .portfolio img 
-    max-width: 280px
-    height: 165px
+
   .menu__name     
     &:hover
       &::after
@@ -123,3 +145,139 @@
         &:hover
           &::after
             display: none
+  .name
+    text-align: center
+    text-align: -webkit-center
+    &__info
+      margin-bottom: 30px
+    &:hover
+      &::before, &::after
+        display: none
+  .contacts 
+    margin-left: 50px
+  .category
+    &__name, li
+      &:hover
+        color: #fff
+  .footerbottom
+    padding-top: 20px
+    &__name
+      display: flex
+      justify-content: center
+    &__menu
+      padding-top: 20px
+    a
+      &:hover
+        color: #fff
+@media screen and (min-width : 320px) and (max-width : 575px)
+  .banner
+    &__fone
+      padding-top: 100px
+      padding-bottom: 160px
+      &-title
+        font-size: 30px
+        &:hover
+          font-size: 30px
+          &::after
+            display: none
+      &-text 
+        font-size: 16px
+        line-height: 24px
+  .about
+    padding-top: 60px
+    padding-bottom: 60px
+    &__story
+      text-align: center
+    &__images
+      &:hover
+        transform: none
+  .singatures 
+    padding-top: 60px
+    padding-bottom: 60px
+  .history
+    padding-left: 0
+    &__info
+      margin: auto
+    &__title::after
+      margin-left: 120px
+  .singatures__title::after ,
+  .menu__title::after 
+    margin-left: 120px
+  .cards2 
+    margin-top: 0
+    margin-left: 9px
+  .cards 
+    margin-top: 80px
+  .menu__name     
+    &:hover
+      &::after
+        display: none
+  .menu
+    padding-top: 60px
+    padding-bottom: 60px
+    &__price
+      margin-right: 0
+      &:hover
+        transform: none
+
+  .header
+    &__logo
+      &:hover
+        &::before, &::after
+          display: none 
+  .nav
+    &-item
+      &:hover
+        &::after
+          display: none
+  .banner
+    &__fone
+      &-title
+        &:hover
+          &::after
+            display: none
+  .name
+    text-align: center
+    text-align: -webkit-center
+    &__info
+      margin-bottom: 30px
+    &:hover
+      &::before, &::after
+        display: none
+  .contacts 
+    margin-left: 50px
+  .swiper-slide 
+    max-width: 320px
+    height: 200px
+  .footer
+    padding-top: 60px
+    margin-bottom: -50px
+  .category
+    &__name
+      &:hover
+        color: #fff
+    &__info
+      margin-top: 20px
+      li
+        &:hover
+          color: #fff
+  .footerbottom
+    padding-top: 20px
+    &__name
+      display: flex
+      justify-content: center
+      font-size: 15px
+      a
+        &:hover
+          color: #fff
+    &__menu
+      padding-top: 20px
+      flex-wrap: wrap
+      justify-content: space-around
+      a
+        &:hover
+          color: #fff
+  &__social
+    img
+      &:hover
+        transform: none
